@@ -5,11 +5,12 @@ import java.util.ArrayList;
 public class Bundle {
 	private ArrayList<Item> bundleItems;
 	private int itemsRequired;
-	private Item reward;
-	private int quantityReward;
+	private String reward;
 	
-	public Bundle() {
-		
+	public Bundle(ArrayList<Item> bundleItems, int itemsRequired, String reward) {
+		this.bundleItems = bundleItems;
+		this.itemsRequired = itemsRequired;
+		this.reward = reward;
 	}
 
 	//Getter Functions
@@ -19,11 +20,8 @@ public class Bundle {
 	public int getItemsRequired() {
 		return itemsRequired;
 	}	
-	public Item getReward() {
+	public String getReward() {
 		return reward;
-	}	
-	public int getQuantityReward() {
-		return quantityReward;
 	}	
 
 	//Setter Functions
@@ -33,11 +31,8 @@ public class Bundle {
 	public void setItemsRequired(int itemsRequired) {
 		this.itemsRequired = itemsRequired;
 	}
-	public void setReward(Item reward) {
+	public void setReward(String reward) {
 		this.reward = reward;
-	}
-	public void setQuantityReward(int quantityReward) {
-		this.quantityReward = quantityReward;
 	}
 	
 }

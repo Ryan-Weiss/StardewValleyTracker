@@ -6,8 +6,9 @@ public class CommunityRoom {
 	private ArrayList<Bundle> roomBundles;
 	private String reward;
 	
-	public CommunityRoom() {
-		
+	public CommunityRoom(ArrayList<Bundle> roomBundles, String reward) {
+		this.roomBundles = roomBundles;
+		this.reward = reward;
 	}
 
 	//Getter Functions

@@ -5,17 +5,17 @@ import java.util.ArrayList;
 public class CommunityCenter {
 	private ArrayList<CommunityRoom> communityRooms;
 	
-	public CommunityCenter(SaveFile saveFileToLoad) {
-		
+	public CommunityCenter(ArrayList<CommunityRoom> communityRooms) {
+		this.communityRooms = communityRooms;
 	}
 	
 	//Getter Methods
-	public ArrayList<CommunityRoom> communityRooms() {
+	public ArrayList<CommunityRoom> getCommunityRooms() {
 		return communityRooms;
 	}
 
 	//Setter Methods
-	public void communityRooms(ArrayList<CommunityRoom> communityRooms) {
+	public void setCommunityRooms(ArrayList<CommunityRoom> communityRooms) {
 		this.communityRooms = communityRooms;
 	}
 
